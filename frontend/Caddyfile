@@ -1,0 +1,7 @@
+:8080 {
+	route /api/* {
+		reverse_proxy backend:3000
+	}
+	root * public
+	file_server
+}
